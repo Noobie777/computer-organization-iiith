@@ -4,19 +4,59 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<ul>
-		<li><a class="active" href="#home">Home</a></li>
-		<li><a href="#news">News</a></li>
-		<li><a href="#contact">Contact</a></li>
-		<li><a href="#about">About</a></li>
-	</ul>
-	<br><br><br>
+ 	<div class="navbar">
+  	<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">File
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Help.html">Help</a>
+    <a href="#">About</a>
+  </div>
+  <button class="dropbtn" onclick="myFunction()">Execute
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Help.html">Help</a>
+    <a href="#">About</a>
+  </div>
+  <button class="dropbtn" onclick="myFunction()">Run
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Help.html">Help</a>
+    <a href="#">About</a>
+  </div>
+  <button class="dropbtn" onclick="myFunction()">Help
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="Help.html">Help</a>
+    <a href="#">About</a>
+  </div>
+  </div> 
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+	
+	<br>
 	<button onclick='window.location.href="Editor.html"'>Editor </button>
 	<button onclick='window.location.href="Execute.html"'>Execute</button>
 	<button onclick='window.location.href="SampleCodes.html"'>Sample Codes </button>
 	<button onclick='window.location.href="Help.html"'>   Help </button>
-	<br><br><br>
-	<textarea rows="40" cols="100"></textarea>
+	<br>
+	<textarea rows="40" style="width:98%;"></textarea>
 	<footer>
 		<button>Run Input/Output</button>
 		<button>Simmulator Messages</button>
