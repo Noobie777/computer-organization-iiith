@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<style type="text/css">
+		.wrapper{
+			display: grid;
+			grid-template-columns: 2fr 2fr 2fr;
+			grid-auto-rows: minmax(100px,grid-auto-rows);
+			grid-gap: 2em;
+		}
+		.wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+    .btn{
+    	height: 2em;
+    	width: 5em;
+    }
+    .hide{
+    	display: none;
+    }
+    .box2{
+    	align-self: start;
+
+    }
+	</style>
+</head>
+<body>
+	<div>
+	<button onclick='window.location.href="Editor.html"'>Editor </button>
+	<button onclick='window.location.href="Execute.html"'>Execute</button>
+	<button onclick='window.location.href="SampleCodes.html"'>Sample Codes </button>
+	<button onclick='window.location.href="Help.html"'>   Help </button>
+	</div>
+	<br><br>
+ 	<div class="wrapper">
+ 	<div>
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
+    </div>
+    <div class="box2">
+      <table align="center">
+      	<tr>
+      		<td> </td>
+      		<td ><button class="btn">Step</button></td>
+      	
+      		<td><button class="btn">Run</button></td>
+      	</tr>
+      </table>
+  </div>
+
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
+    </div>
+ 		
+ 	</div>
+<div>
+	<footer>
+		<button>Run Input/Output</button>
+		<button>Simmulator Messages</button>
+		<table border="5" width="100">
+			<tr>
+				<td><button>Clear</button></td>
+				<td><textarea cols="100"></textarea></td>
+			</tr>
+		</table>
+	</footer>
+</div>
+</body>
+</html>
