@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SampleCodes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		function fill1(){
+			var text1 ="@ Adding two numbers"
+ 	document.forms.myform.area.value=text1;
+
+		}
+		function fill2(){
+			var text1 ="@Adding elemnts of an array"
+ 	document.forms.myform.area.value=text1;
+		}
+		function fill3(){
+			var text1 ="@Forward branch"
+ 	document.forms.myform.area.value=text1;
+		}
+		function fill4(){
+			var text1 ="@Square sum"
+ 	document.forms.myform.area.value=text1;
+		}
+	</script>
+	<div>
+	<button onclick='window.location.href="Editor.html"'>Editor </button>
+	<button onclick='window.location.href="Execute.html"'>Execute</button>
+	<button onclick='window.location.href="SampleCodes.html"'>Sample Codes </button>
+	<button onclick='window.location.href="Help.html"'>   Help </button>
+	</div>
+	<br>
+	<div>
+	<button onclick="fill1()">Program 1</button>
+	<button onclick="fill2()">Program 2</button>
+	<button onclick="fill3()">Program 3 </button>
+	<button onclick="fill4()">Program 4</button>
+	</div>
+	<div class="wrapper">
+		<div class="gfg">
+			<form name="myform">
+			<textarea name="area" rows="30" cols="60">
+				
+			</textarea>
+			</form>
+		</div>
+		
+	</div>
+
+
+	
+	<div>
+		<button>Run Input/Output</button>
+		<button>Simmulator Messages</button>
+		<table border="5" width="100">
+			<tr>
+				<td><button>Clear</button></td>
+				<td><textarea cols="100"></textarea></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
