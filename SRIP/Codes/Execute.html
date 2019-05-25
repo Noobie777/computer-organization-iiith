@@ -21,11 +21,46 @@
     	width: 5em;
     }
     .hide{
-    	display: none;
+    	visibility: hidden;
     }
     .box2{
     	align-self: start;
 
+    }
+    .nested{
+      display: grid;
+      /*visibility: hidden;*/
+      grid-template-columns: repeat(3, 2fr);
+    }
+    .nested > div{
+      border: 1px solid;
+      padding: 3px;
+    }
+    .ds{
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+    }
+    .ds>div{
+      border: 1px solid;
+      padding: 2px;
+    }
+    .gfg{
+      margin:5px;
+      padding: 5px;
+      width: 500px;
+      height: 400px;
+      overflow: auto;
+    }
+    .dsc{
+      margin:5px;
+      padding: 5px;
+      width: 555px;
+      height: 200px;
+      overflow: auto;
+    } 
+    .bal{
+      font-weight: bold; 
+      text-align: center
     }
 	</style>
 </head>
@@ -38,10 +73,83 @@
 	</div>
 	<br><br>
  	<div class="wrapper">
- 	<div>
-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
-    </div>
+ 	<div class="nested gfg">
+    <div class="bal">Bkpt</div>
+    <div class="bal">Source</div>
+    <div class="bal">Address</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+        <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+        <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+        <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+        <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+        <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+        <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+  </div>
     <div class="box2">
       <table align="center">
       	<tr>
@@ -53,16 +161,150 @@
       </table>
   </div>
 
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
+    <div class="nested gfg">
+    <div class="bal">Name</div>
+    <div class="bal">Number</div>
+    <div class="bal">Value</div>
+    <div>$r0</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r1</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r2</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r3</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r4</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r5</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r6</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r7</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r8</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r9</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r10</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r11</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r12</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r13</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r14</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r15</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+    <div>$r16</div>
+    <div>0</div>
+    <div class="hide">Example</div>
+
+
+      
     </div>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
+    <div  class="ds dsc">
+      <div>Address</div>
+      <div class="bal">Value(+0)</div>
+      <div class="bal">Value(+4)</div>
+      <div class="bal">Value(+8)</div>
+      <div class="bal">Value(+12)</div>
+      <div class="bal">Value(+16)</div>
+      <div class="bal">Value(+20)</div>
+      <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+    <div>Lorem</div>
+      
+      
     </div>
  		
- 	</div>
+ 	</div><br>
 <div>
-	<footer>
 		<button>Run Input/Output</button>
 		<button>Simmulator Messages</button>
 		<table border="5" width="100">
@@ -71,7 +313,6 @@
 				<td><textarea cols="100"></textarea></td>
 			</tr>
 		</table>
-	</footer>
 </div>
 </body>
 </html>
