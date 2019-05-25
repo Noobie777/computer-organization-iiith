@@ -29,3 +29,62 @@ li a:hover:not(.active) {
 .active {
   background-color: #4CAF50;
 }
+.wrapper{
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-auto-rows: minmax(100px,grid-auto-rows);
+      grid-gap: 2em;
+    }
+    .wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+    .btn{
+      height: 2em;
+      width: 5em;
+    }
+    .hide{
+      visibility: hidden;
+    }
+    .box2{
+      align-self: start;
+
+    }
+    .nested{
+      display: grid;
+      /*visibility: hidden;*/
+      grid-template-columns: repeat(3, 2fr);
+    }
+    .nested > div{
+      border: 1px solid;
+      padding: 3px;
+    }
+    .ds{
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+    }
+    .ds>div{
+      border: 1px solid;
+      padding: 2px;
+    }
+    .gfg{
+      margin:5px;
+      padding: 5px;
+      width: 500px;
+      height: 400px;
+      overflow: auto;
+    }
+    .dsc{
+      margin:5px;
+      padding: 5px;
+      width: 555px;
+      height: 200px;
+      overflow: auto;
+    } 
+    .bal{
+      font-weight: bold; 
+      text-align: center
+    }
