@@ -2,68 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-	<title>CSS</title>
-	<!--<style type="text/css">
-		.wrapper{
-			display: grid;
-			grid-template-columns: 2fr 2fr 2fr;
-			grid-auto-rows: minmax(100px,grid-auto-rows);
-			grid-gap: 2em;
-		}
-		.wrapper > div{
-      background:#eee;
-      padding:1em;
-    }
-    .wrapper > div:nth-child(odd){
-      background:#ddd;
-    }
-    .btn{
-    	height: 2em;
-    	width: 5em;
-    }
-    .hide{
-    	visibility: hidden;
-    }
-    .box2{
-    	align-self: start;
-
-    }
-    .nested{
-      display: grid;
-      /*visibility: hidden;*/
-      grid-template-columns: repeat(3, 2fr);
-    }
-    .nested > div{
-      border: 1px solid;
-      padding: 3px;
-    }
-    .ds{
-      display: grid;
-      grid-template-columns: repeat(7,1fr);
-    }
-    .ds>div{
-      border: 1px solid;
-      padding: 2px;
-    }
-    .gfg{
-      margin:5px;
-      padding: 5px;
-      width: 500px;
-      height: 400px;
-      overflow: auto;
-    }
-    .dsc{
-      margin:5px;
-      padding: 5px;
-      width: 555px;
-      height: 200px;
-      overflow: auto;
-    } 
-    .bal{
-      font-weight: bold; 
-      text-align: center
-    }
-	</style>--> 
+	<title>Execute</title>
+    <script type="text/javascript" src="Libraries/execute.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -90,237 +30,264 @@
 	<br><br>
  	<div class="wrapper">
  	<div class="nested gfg">
-    <div class="bal">Bkpt</div>
-    <div class="bal">Source</div>
-    <div class="bal">Address</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-        <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-        <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-        <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-        <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-        <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-        <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-  </div>
+        <img src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="logo" width="15em" height="15em"
+                style="background-color: white;border: 1px solid black;">
+            Text Segment
+    <table id="text_table" style="background-color: white;width:100%;visibility: hidden;">
+                <tr>
+                    <th>Bkpt</th>
+                    <th>Address</th>
+                    <th>Source</th>
+                </tr>
+            </table>
+        </div>
     <div class="box2">
       <table align="center">
       	<tr>
       		<td> </td>
       		<td ><button class="btn">Step</button></td>
       	
-      		<td><button class="btn">Run</button></td>
+      		<td><button class="btn" onclick="run()">Run</button></td>
       	</tr>
       </table>
   </div>
 
-    <div class="nested gfg">
-    <div class="bal">Name</div>
-    <div class="bal">Number</div>
-    <div class="bal">Value</div>
-    <div>$r0</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r1</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r2</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r3</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r4</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r5</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r6</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r7</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r8</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r9</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r10</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r11</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r12</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r13</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r14</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r15</div>
-    <div>0</div>
-    <div class="hide">Example</div>
-    <div>$r16</div>
-    <div>0</div>
-    <div class="hide">Example</div>
+    <div style="grid-column: 3;
+  grid-row: 1;">
+    <table id="register_table" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>$r0</td>
+                    <td>0</td>
+                    <td id="$r0">0</td>
+                </tr>
+                <tr>
+                    <td>$r1</td>
+                    <td>0</td>
+                    <td id="$r1">0</td>
+                </tr>
+                <tr>
+                    <td>$r2</td>
+                    <td>0</td>
+                    <td id="$r2">0</td>
+                </tr>
+                <tr>
+                    <td>$r3</td>
+                    <td>0</td>
+                    <td id="$r3">0</td>
+                </tr>
+                <tr>
+                    <td>$r4</td>
+                    <td>0</td>
+                    <td id="$r4">0</td>
+                </tr>
+                <tr>
+                    <td>$r5</td>
+                    <td>0</td>
+                    <td id="$r5">0</td>
+                </tr>
+                <tr>
+                    <td>$r6</td>
+                    <td>0</td>
+                    <td id="$r6">0</td>
+                </tr>
+                <tr>
+                    <td>$r7</td>
+                    <td>0</td>
+                    <td id="$r7">0</td>
+                </tr>
+                <tr>
+                    <td>$r8</td>
+                    <td>0</td>
+                    <td id="$r8">0</td>
+                </tr>
+                <tr>
+                    <td>$r9</td>
+                    <td>0</td>
+                    <td id="$r9">0</td>
+                </tr>
+                <tr>
+                    <td>$r10</td>
+                    <td>0</td>
+                    <td id="$r10">0</td>
+                </tr>
+                <tr>
+                    <td>$r11</td>
+                    <td>0</td>
+                    <td id="$r11">0</td>
+                </tr>
+                <tr>
+                    <td>$r12</td>
+                    <td>0</td>
+                    <td id="$r12">0</td>
+                </tr>
+                <tr>
+                    <td>$r13</td>
+                    <td>0</td>
+                    <td id="$r13">0</td>
+                </tr>
+                <tr>
+                    <td>$r14</td>
+                    <td>0</td>
+                    <td id="$r14">0</td>
+                </tr>
+                <tr>
+                    <td>$r15</td>
+                    <td>0</td>
+                    <td id="$r15">0</td>
+                </tr>
+                <tr>
+                    <td>$r16</td>
+                    <td>0</td>
+                    <td id="$r16">0</td>
+                </tr>
+            </table>
 
-
-      
     </div>
     <div  class="ds dsc">
-      <div>Address</div>
-      <div class="bal">Value(+0)</div>
-      <div class="bal">Value(+4)</div>
-      <div class="bal">Value(+8)</div>
-      <div class="bal">Value(+12)</div>
-      <div class="bal">Value(+16)</div>
-      <div class="bal">Value(+20)</div>
-      <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-    <div>Lorem</div>
-      
-      
-    </div>
+     
+    <img src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="logo" width="15em" height="15em"style="background-color: white;border: 1px solid black;">
+            Data Segment
+            <table id="data_table" style="visibility:hidden;">
+                <tr>
+                    <th>Address</th>
+                    <th>Value(+0)</th>
+                    <th>Value(+4)</th>
+                    <th>Value(+8)</th>
+                    <th>Value(+16)</th>
+                    <th>Value(+20)</th>
+                </tr>
+                <tr>
+                    <td>268435456</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435480</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435504</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435528</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435552</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435576</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435600</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435624</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435648</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435672</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435696</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435720</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435744</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435768</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>268435792</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+
+            </table>
  		
  	</div><br>
-<div>
+<div style="grid-column: 1/3;">
 		<button>Run Input/Output</button>
 		<button>Simmulator Messages</button>
 		<table border="5" width="100">
