@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function fill1(){
+var text1 = "#Program to add two numbers \n\n\t" + ".data\n\t" + "sum: .word 0  \n\n\t" + ".text\n\t" + "main:\n\t" + "li $t0, 10\n\t" + "li $t1, 15\n\t" + "add $t2, $t0, $t1 	# compute the sum\n\t" + "sw $t2, sum";
+
+var lines= text1.split("\n\t");
+document.forms.myform.area.value=lines;
+/*var searchStr="main";
+for(var line : lines)
+{
+	var[] wordOL = line.split(" ");
+	boolean match = false;
+	for(var word : wordOL)
+	{
+		if(searchStr.equals(word))
+			match=true;
+	}
+	if(match)
+		text2="FUCK NIGGERS"
+}
+
+document.forms.myform.area.value=text2;*/
+}
+</script>
+<div>
+	<button onclick="fill1()">Program 1</button>
+</div>
+		<div>
+			<form name="myform">
+			<textarea name="area" rows="30" cols="60">
+				
+			</textarea>
+			</form>
+		</div>
+
+</body>
+
+</html>
