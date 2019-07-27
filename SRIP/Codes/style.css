@@ -151,3 +151,10 @@ li a:hover:not(.active) {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+table, th, td {
+  border: 1px solid black;
+}
+#text_table {
+  border: 1px solid red; 
+  width: 500px;
+}

@@ -3,7 +3,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Execute</title>
-    <script type="text/javascript" src="Libraries/execute.js"></script>
+    <script src="bussduss.js"></script>
+    <script type="text/javascript">
+    	function run() {
+	document.getElementById("data_table").setAttribute("style", "visibility:visible;")
+	document.getElementById("text_table").setAttribute("style", "visibility:visible;");
+	}
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -12,9 +18,9 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#">New</a>
+      <a href="#">Open</a>
+      <a href="#">Save</a>
     </div>
   </div>
   <div class="dropdown">
@@ -22,9 +28,9 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#">Undo</a>
+      <a href="#">Redo</a>
+      <a href="#">Select All</a>
     </div>
   </div>
   <div class="dropdown">
@@ -32,9 +38,8 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#" onclick="run()">Assemble</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="Execute.html" onclick="akhiltopper()">Assemble</a>
+      <a href="#">Reset</a>
     </div>
   </div> 
   <div class="dropdown">
@@ -42,9 +47,8 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="help.html">Help</a>
+      <a onclick="about()">About</a>
     </div>
   </div>
 </div>
@@ -58,26 +62,33 @@
 	<br><br>
  	<div class="wrapper">
  	<div class="nested gfg">
-        <img src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="logo" width="15em" height="15em"
-                style="background-color: white;border: 1px solid black;">
-            Text Segment
-    <table id="text_table" style="background-color: white;width:100%;visibility: hidden;">
+        <!-- <img src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="logo" width="15em" height="15em"
+                style="background-color: white;border: 1px solid black;"> -->
+            <!-- <p> Text Segment </p> -->
+            <!-- <br>
+            <br> -->
+    	<table id="text_table" style="visibility: visible;">
+    		<!-- <col width="30%">
+  			 --><!-- <col width="30%"> -->
+  			<!-- <col width=""> -->
+        	
                 <tr>
                     <th>Bkpt</th>
                     <th>Address</th>
                     <th>Source</th>
                 </tr>
-            </table>
+            
+    	</table>
         </div>
     <div class="box2">
       <table align="center">
       	<tr>
-      		<td ><button class="btn">Step</button></td>
+      		<td ><button class="btn" >Step</button></td>
       	
       		
       	</tr>
       	<tr>
-      		<td><button class="btn" onclick="run()">Run</button></td>
+      		<td><button class="btn" onclick='akhiltopper()'>Run</button></td>
       	</tr>
       </table>
   </div>
@@ -184,7 +195,7 @@
      
     <img src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="logo" width="15em" height="15em"style="background-color: white;border: 1px solid black;">
             Data Segment
-            <table id="data_table" style="visibility:visible;">
+            <table id="data_table" style="visibility:hidden;">
                 <tr>
                     <th>Address</th>
                     <th>Value(+0)</th>
