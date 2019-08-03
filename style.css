@@ -1,0 +1,160 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.wrapper{
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-auto-rows: minmax(100px,grid-auto-rows);
+      grid-gap: 2em;
+    }
+    .wrapper > div{
+      background:#eee;
+      padding:1em;
+    }
+    .wrapper > div:nth-child(odd){
+      background:#ddd;
+    }
+    .btn{
+      height: 2em;
+      width: 5em;
+    }
+    .hide{
+      visibility: hidden;
+    }
+    .box2{
+      align-self: start;
+
+    }
+    .nested{
+      display: grid;
+      /*visibility: hidden;*/
+      grid-template-columns: repeat(3, 2fr);
+    }
+    .nested > div{
+      border: 1px solid;
+      padding: 3px;
+    }
+    .ds{
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+    }
+    .ds>div{
+      border: 1px solid;
+      padding: 2px;
+    }
+    .gfg{
+      margin:5px;
+      padding: 5px;
+      width: 500px;
+      height: 400px;
+      overflow: auto;
+    }
+    .dsc{
+      margin:5px;
+      padding: 5px;
+      width: 555px;
+      height: 200px;
+      overflow: auto;
+    } 
+    .bal{
+      font-weight: bold; 
+      text-align: center
+    }
+        /* Navbar*/
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+table, th, td {
+  border: 1px solid black;
+}
+#text_table {
+  border: 1px solid red; 
+  width: 500px;
+}
