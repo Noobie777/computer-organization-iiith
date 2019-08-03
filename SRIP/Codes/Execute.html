@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Execute</title>
-    <script src="bussduss.js"></script>
+    <script src="execute.js"></script>
     <script type="text/javascript">
     	function run() {
 	document.getElementById("data_table").setAttribute("style", "visibility:visible;")
@@ -38,7 +38,7 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="Execute.html" onclick="akhiltopper()">Assemble</a>
+      <a>Assemble</a>
       <a href="#">Reset</a>
     </div>
   </div> 
@@ -62,15 +62,7 @@
 	<br><br>
  	<div class="wrapper">
  	<div class="nested gfg">
-        <!-- <img src="https://image.flaticon.com/icons/png/512/226/226777.png" alt="logo" width="15em" height="15em"
-                style="background-color: white;border: 1px solid black;"> -->
-            <!-- <p> Text Segment </p> -->
-            <!-- <br>
-            <br> -->
-    	<table id="text_table" style="visibility: visible;">
-    		<!-- <col width="30%">
-  			 --><!-- <col width="30%"> -->
-  			<!-- <col width=""> -->
+    	<table id="text_table" width= "100%">
         	
                 <tr>
                     <th>Bkpt</th>
@@ -171,7 +163,7 @@
                 <tr>
                     <td>$r13</td>
                     <td>0</td>
-                    <td id="$r13">0</td>
+                    <td id="$r13">0x10100000</td>
                 </tr>
                 <tr>
                     <td>$r14</td>
@@ -181,12 +173,12 @@
                 <tr>
                     <td>$r15</td>
                     <td>0</td>
-                    <td id="$r15">0</td>
+                    <td id="$r15">0x4000000</td>
                 </tr>
                 <tr>
                     <td>$r16</td>
                     <td>0</td>
-                    <td id="$r16">0</td>
+                    <td id="$r16">0xffffffff</td>
                 </tr>
             </table>
 
@@ -206,16 +198,16 @@
                 </tr>
                 <tr>
                     <td>10000000</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td>0xa</td>
+                    <td>0x8</td>
+                    <td>0x9</td>
                     <td>0</td>
                     <td>0</td>
                 </tr>
                 <tr>
                     <td>10000018</td>
                     <td>0</td>
-                    <td>0</td>
+                    <td>0x7</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
