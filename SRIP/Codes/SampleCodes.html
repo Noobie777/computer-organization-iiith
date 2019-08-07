@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div>
+		<h1 class="elegantshadow"> ARM SIMULATOR</h1>
+	</div>
 	<script type="text/javascript">
 		function fill1(){
 			var text1 =`@ Adding two numbers
@@ -21,8 +24,8 @@
 	main:
 	ldr r1, =num1
 	ldr r2, =num2
-       	ldr r3, [r1] 
-        	ldr r4, [r2] 
+    ldr r3, [r1] 
+    ldr r4, [r2] 
 	add r5, r3, r4
 	ldr r6, =sum
  	str r5, [r6]	

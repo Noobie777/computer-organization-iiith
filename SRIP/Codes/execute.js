@@ -54,17 +54,7 @@ table = document.getElementById('text_table');
  		cell.innerHTML=dhoom[i][j];
  	}
  }
-}
-table1 = document.getElementById('register_table');
- for(var i=0;i<dhoom.length;i++)
- {
-    var newRow=table.insertRow(table.length);
-    for(var j=0;j<dhoom[i].length;j++)
-    {
-        var cell= newRow.insertCell(j);
-        cell.innerHTML=dhoom[i][j];
-    }
- }
+ document.getElementById('com_mes').value="Compiled Successfully!";
 }
 
 function badoom(){

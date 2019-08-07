@@ -4,21 +4,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Execute</title>
     <script src="execute.js"></script>
-    <script type="text/javascript">
-    	function run() {
-	document.getElementById("data_table").setAttribute("style", "visibility:visible;")
-	document.getElementById("text_table").setAttribute("style", "visibility:visible;");
-	}
-    </script>
 </head>
 <body>
+    <div>
+        <h1 class="elegantshadow"> ARM SIMULATOR</h1>
+    </div>
     <div class="navbar">
   <div class="dropdown">
     <button class="dropbtn">File
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">New</a>
+      <a href="Editor.html">New</a>
       <a href="#">Open</a>
       <a href="#">Save</a>
     </div>
@@ -326,7 +323,7 @@
 		<table border="5" width="100">
 			<tr>
 				<td><button>Clear</button></td>
-				<td><textarea cols="100"></textarea></td>
+				<td><textarea id="com_mes" cols="100"></textarea></td>
 			</tr>
 		</table>
 </div>
