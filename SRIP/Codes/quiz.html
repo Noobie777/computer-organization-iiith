@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASM Language Quiz</title>
+	<!-- <link rel="stylesheet" type="text/css" href="quizcss.css"> -->
+</head>
+<body>
+	<form name="myform">
+	<div>
+		<center><h1 class="elegantshadow"> ARM SIMULATOR QUIZ</h1></center>
+	</div>
+	<p>Please chose one out of the given 4 options</p>
+	
+	<table>
+	<tr><b>1. Which character do you use when specifying a hexadecimal number (say for a colour value)?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q1" value="?">?<br>
+			<input type="radio" name="q1" value="!">!<br>
+			<input type="radio" name="q1" value="<"><<br>
+			<input type="radio" name="q1" value="#">#<br><!--Correct-->
+			<br>
+	</tr>
+	<br>
+	<tr><b>2. Most processors designed by ARM are</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q2" value="16">16 Bit<br>
+			<input type="radio" name="q2" value="32">32 Bit<br><!--Correct-->
+			<input type="radio" name="q2" value="64">64 Bit<br>
+			<input type="radio" name="q2" value="8">8 Bit<br>
+			<br>
+		</tr>
+	</tr>
+	<tr><b>3. Which of the following is a legal identifier in assembly language?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q3" value="">july_2012<br><!-- Correct-->
+			<input type="radio" name="q3" value="">a1a23...a247a248<br>
+			<input type="radio" name="q3" value="">10percent<br>
+			<input type="radio" name="q3" value="">eflags<br>
+			<br>
+	</tr>
+	<tr><b>4. Which 32-bit register is used as the default loop counter</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q4" value="">EIP<br>
+			<input type="radio" name="q4" value="">ESI<br>
+			<input type="radio" name="q4" value="">ECX<br><!-- Correct-->
+			<input type="radio" name="q4" value="">ESP<br>
+			<br>
+	</tr>
+	<tr><b>5. Which of these values is the most acceptable for the data type REAL4</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q5" value="">720<br>
+			<input type="radio" name="q5" value="">9.54<br><!-- Correct-->
+			<input type="radio" name="q5" value="">'Q'<br>
+			<input type="radio" name="q5" value="">"Jennifer",0<br>
+			<br>
+	</tr>
+	<tr><b>6. Which jump would take place in this code snippet
+
+			<p><i>mov al,232</i></p>
+			<p><i>cmp al,135</i></p></b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q6" value="">jb<br>
+			<input type="radio" name="q6" value="">ja<br><!-- Correct-->
+			<input type="radio" name="q6" value="">je<br>
+			<input type="radio" name="q6" value="">jz<br>
+			<br>
+	</tr>
+	<tr><b>7. How is <i>17D78400h</i> written in little endian mode?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q7" value="">17,D7,84,00<br>
+			<input type="radio" name="q7" value="">8400,17D7<br>
+			<input type="radio" name="q7" value="">17d7,8400<br>
+			<input type="radio" name="q7" value="">00,84,D7,17<br><!-- Correct-->
+			<br>
+	</tr>
+	<tr><b>8. What is 01100101b XOR 110101110b?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q8" value="">10110011b<br><!-- Correct-->
+			<input type="radio" name="q8" value="">11110111b<br>
+			<input type="radio" name="q8" value="">01000100b<br>
+			<input type="radio" name="q8" value="">01001101b<br>
+			<br>
+	</tr>
+	<tr><b>9. Which operator in assembly language counts the number of bytes in an identifier?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q9" value="">OFFSET<br>
+			<input type="radio" name="q9" value="">TYPE<br><!-- Correct-->
+			<input type="radio" name="q9" value="">PTR<br>
+			<input type="radio" name="q9" value="">TYPEDEF<br>
+			<br>
+	</tr>
+	<tr><b>10. Number of machine cycles required for RET instruction in 8085 microprocessor is</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q10" value="">1<br>
+			<input type="radio" name="q10" value="">2<br>
+			<input type="radio" name="q10" value="">3<br><!--Correct-->
+			<input type="radio" name="q10" value="">5<br>
+			<br>
+	</tr>
+	<tr><b>11. Which of the following interrupt has highest Priority?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q11" value="">INTR<br>
+			<input type="radio" name="q11" value="">TRAP<br><!--Correct-->
+			<input type="radio" name="q11" value="">RST 7.5<br>
+			<input type="radio" name="q11" value="">RST 6.5<br>
+			<br>
+	</tr>
+	<tr><b>12. The instruction <i>DEC N</i> inform the assembler to</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q12" value="">Decrement content of N<br><!--Correct-->
+			<input type="radio" name="q12" value="">Decrement dta addressed by N<br>
+			<input type="radio" name="q12" value="">Conver signed decimal to binary<br>
+			<input type="radio" name="q12" value="">None<br>
+			<br>
+	</tr>
+	<tr><b>13. In 8085 which is/are the 16 bit registers?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q13" value="">Program Counter<br>
+			<input type="radio" name="q13" value="">Stack Pointer<br>
+			<input type="radio" name="q13" value="">Both A and B<br><!--Correct-->
+			<input type="radio" name="q13" value="">None<br>
+			<br>
+	</tr>
+	<tr><b>14. Assembly language programs are written using</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q14" value="">Hex code<br>
+			<input type="radio" name="q14" value="">Mnemonics<br><!--Correct-->
+			<input type="radio" name="q14" value="">ASCII<br>
+			<input type="radio" name="q14" value="">None<br>
+			<br>
+	</tr>
+	<tr><b>15. Classify these registers <i>SI  DI</i></b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q15" value="">Index Registers<br><!--Correct-->
+			<input type="radio" name="q15" value="">General Purpose Registers<br>
+			<input type="radio" name="q15" value="">Segment Registers<br>
+			<input type="radio" name="q15" value="">None of the above<br>
+			<br>
+	</tr>
+	<tr><b>16. The CX register full name is</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q16" value="">Accumulator register<br>
+			<input type="radio" name="q16" value="">Base register<br>
+			<input type="radio" name="q16" value="">Counter register<br><!--correct-->
+			<input type="radio" name="q16" value="">None<br>
+			<br>
+	</tr>
+	<tr><b>17. Which of these instructions can be performed only in CX Register?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q17" value="">LOOP<br><!--Correct-->
+			<input type="radio" name="q17" value="">MUL, DIV, CBW<br>
+			<input type="radio" name="q17" value="">ADD, SUB<br>
+			<input type="radio" name="q17" value="">All the above<br>
+			<br>
+	</tr>
+	<tr><b>18. How many bits in one <i>double</i> word?</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q18" value="">8 bits<br>
+			<input type="radio" name="q18" value="">16 bits<br>
+			<input type="radio" name="q18" value="">32 bits<br><!--correct-->
+			<input type="radio" name="q18" value="">4 bits<br>
+			<br>
+	</tr>
+	<tr><b>19. What is the length of the 8088's physical address</b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q19" value="">8 bits<br>
+			<input type="radio" name="q19" value="">16 bits<br><!--correct-->
+			<input type="radio" name="q19" value="">20 bits<br>
+			<input type="radio" name="q19" value="">14 bits<br>
+			<br>
+	</tr>
+	<tr><b>20. What is the value of AX Register after executing:
+			<p><i>MOV AX</i></p>
+			<p><i>456h</i></p>
+			<p><i>CMP AX</i></p>
+			<p><i>456h</i></p></b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q20" value="">456h<br><!--Correct-->
+			<input type="radio" name="q20" value="">Zero<br>
+			<input type="radio" name="q20" value="">Unknown<br>
+			<input type="radio" name="q20" value="">520h<br>
+			<br>
+	</tr>
+	<tr><b>21. The statement <i>AGE DB 25</i></b></tr>
+		<tr>
+			<br>
+			<input type="radio" name="q21" value="">Instruts processor to store 25 in AX<br>
+			<input type="radio" name="q21" value="">Instructs assembler to stor 25 in RAM and use AGE as reference<br><!--Correct-->
+			<input type="radio" name="q21" value="">Both<br>
+			<input type="radio" name="q21" value="">None<br>
+			<br>
+	</tr>
+	<tr><b>22. Consider the program segment:
+			<p><i>AGE DB 100</i></p>
+			<p><i>MOV AGE,123</i></p>
+			<p>What is the memory-addressing mode of the first operand in MOV instruction</p></b></tr>
+			<tr>
+				<br>
+				<input type="radio" name="q22" value="">Immediate<br>
+				<input type="radio" name="q22" value="">Direct<br>
+				<input type="radio" name="q22" value="">Indirect<br><!--Correct-->
+				<input type="radio" name="q22" value="">Index<br>
+				<br>
+	</tr>
+	<tr><b>23. What is the value of Z flag after:
+			<p><i>SUB AX</i></p>
+			<p><i>AX</i></p></b></tr>
+			<tr>
+				<br>
+				<input type="radio" name="q23" value="">Set<br>
+				<input type="radio" name="q23" value="">Cleared<br><!--Correct-->
+				<input type="radio" name="q23" value="">Unknown<br>
+				<input type="radio" name="q23" value="">None<br>
+				<br>
+	</tr>
+	<tr><b>24. The last statement of the source code should be </b></tr>
+	<tr>
+		<br>
+		<input type="radio" name="q24" value="">STOP<br>
+		<input type="radio" name="q24" value="">RETURN<br>
+		<input type="radio" name="q24" value="">OP<br>
+		<input type="radio" name="q24" value="">END<br><!--Correct-->
+		<br>
+	</tr>
+	<tr><b>25. What is the content of Stack Pointer </b></tr>
+	<tr>
+		<br>
+		<input type="radio" name="q25" value="">Address of current instruction<br>
+		<input type="radio" name="q25" value="">Address of next instruction<br>
+		<input type="radio" name="q25" value="">Address of top element of stack<br>
+		<input type="radio" name="q25" value="">Address of last element of stack<br>
+		<br>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>
